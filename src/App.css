@@ -1,0 +1,129 @@
+.active{
+  background-color: red;
+}
+.prim{
+  background-color: rgb(76, 165, 248);
+}
+.responsive{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 15px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -2px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 19px;
+  left: 0px;
+  top: -3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0f0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0f0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.navBox {
+  float : right;
+}
+.navBox-left {
+  float : left;
+}
+.property{
+  background-color : rgb(19, 32, 73);
+}
+.info{
+  font-size: small;
+}
+.border-text {
+  border-right: 2px solid rgb(184, 181, 181);
+}
+.checked {
+  color: orange;
+}
+.section{
+  border-right: 2px solid rgb(184, 181, 181);
+}
+.info-strike{
+  font-size: x-small;
+  text-decoration: line-through  rgb(184, 181, 181);
+}
+.price-tag {
+  background: green;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 1rem;
+  padding: 0 0.666rem;
+  position: relative;
+  text-align: center;
+}
+.price-tag:after {
+  background: inherit;
+  border-radius: 4px;
+  display: block;
+  content: "";
+  height: 22px;
+  position: absolute;
+  right: -8px;
+  top: 4px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  width: 22px;
+  z-index: -1;
+}
+.price-tag:hover {
+  background: greenyellow;
+}
